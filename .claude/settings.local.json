@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(pip install:*)",
+      "Bash(uv pip:*)",
+      "Bash(python3 -m pip install google-generativeai python-dotenv)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(python agents/gemini_agent.py \"Place a surfer witch at position 0,1,-3\")",
+      "Bash(chmod:*)",
+      "Bash(source /Users/romyilano/Documents/GitHub/VercelHackDeepMind/.venv/bin/activate)",
+      "Bash(python /Users/romyilano/Documents/GitHub/VercelHackDeepMind/agents/gemini_agent.py \"Place a bruja character at position 0,1,-3\")",
+      "Bash(gh pr:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git diff:*)",
+      "Bash(./agents/generate_all.sh)",
+      "Bash(git ls-tree:*)"
+    ]
+  }
+}

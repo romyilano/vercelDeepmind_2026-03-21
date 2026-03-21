@@ -1,0 +1,49 @@
+{
+  "characters": [
+    {
+      "type": "bruja",
+      "asset": "bruja",
+      "position": [
+        0.0,
+        0.5,
+        -3.0
+      ]
+    },
+    {
+      "type": "punkgirl",
+      "asset": "punkgirl",
+      "position": [
+        3.0,
+        0.5,
+        -3.0
+      ]
+    },
+    {
+      "type": "world",
+      "asset": "world",
+      "position": [
+        6.0,
+        0.5,
+        -3.0
+      ]
+    },
+    {
+      "type": "girl",
+      "asset": "punkgirl",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "type": "girl",
+      "asset": "punkgirl",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

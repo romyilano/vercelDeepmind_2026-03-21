@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XR Tool Factory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">XR Tool Factory</h1>
+      <p class="site-tagline">Extended Reality · AI-Powered Creation · Hackathon Demo</p>
+      <nav class="site-nav">
+        <a href="#xr-world">XR World</a>
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="https://www.miromi.com" target="_blank" rel="noopener">miromi.com</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO with VIDEO DEMO above the fold -->
+  <section class="hero" id="demo">
+    <div class="hero-content">
+      <span class="badge">Hackathon Mockup</span>
+      <h2>Build immersive XR experiences<br/>with AI-assisted tooling</h2>
+
+      <div class="video-placeholder hero-video">
+        <!-- Replace src with your actual .mov or .mp4 file path -->
+        <video
+          id="demo-video"
+          controls
+          poster=""
+          preload="none"
+        >
+          <source src="demo.mp4" type="video/mp4" />
+          <source src="demo.mov" type="video/quicktime" />
+          <p class="video-fallback">
+            Your browser doesn't support HTML5 video.
+            <a href="demo.mp4">Download the video</a>.
+          </p>
+        </video>
+        <div class="video-overlay" id="video-overlay">
+          <button class="play-btn" id="play-btn" aria-label="Play demo video">
+            <span class="play-icon">&#9654;</span>
+          </button>
+          <p class="video-label">Demo video · replace <code>demo.mp4</code> or <code>demo.mov</code></p>
+        </div>
+      </div>
+
+      <p class="hero-sub">
+        XR Tool Factory streamlines the creation of augmented and virtual reality
+        applications — from rapid prototyping to production-ready assets.
+      </p>
+      <div class="hero-cta">
+        <a href="#features" class="btn btn-primary">Explore Features</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="xr-badge">XR</div>
+    </div>
+  </section>
+
+  <!-- XR WORLD — live AR scene -->
+  <section class="section xr-launch-section" id="xr-world">
+    <div class="container xr-launch-container">
+      <h2 class="section-title">Experience the AR World</h2>
+      <p class="xr-launch-sub">Step into our latest AI-generated augmented reality scene — built with Gemini + A-Frame. Navigate with WASD, look around with your mouse.</p>
+  <a href="webxr/index.html" class="btn btn-xr-launch">Enter the XR World</a>
+  <p class="xr-launch-hint">Works in any browser. For full VR, use a headset.</p>
+  </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <h2 class="section-title">Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🥽</div>
+          <h3>XR Scene Builder</h3>
+          <p>Drag-and-drop scene composition for AR and VR environments with real-time preview.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Asset Generation</h3>
+          <p>Generate 3D models, textures, and animations using natural-language prompts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Rapid Prototyping</h3>
+          <p>Go from idea to interactive prototype in minutes, not weeks.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Deep Mind Integration</h3>
+          <p>Powered by Google DeepMind APIs for intelligent scene understanding and interaction.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Cross-Platform Export</h3>
+          <p>Publish to WebXR, Meta Quest, Apple Vision Pro, and more from a single project.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Style Transfer</h3>
+          <p>Apply artistic styles and brand guidelines across all assets automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2 class="section-title">About the Project</h2>
+        <p>
+          XR Tool Factory was built during a hackathon to explore the intersection of
+          extended reality and large language models. The goal: make professional XR
+          development accessible to everyone, from solo creators to enterprise teams.
+        </p>
+        <p>
+          The project uses Google DeepMind's models for semantic understanding,
+          object detection, and generative 3D content — all wrapped in an intuitive,
+          browser-based interface.
+        </p>
+        <div class="about-links">
+          <a href="https://www.miromi.com" target="_blank" rel="noopener" class="btn btn-primary">
+            Visit miromi.com
+          </a>
+          <a href="https://github.com/romyilano" target="_blank" rel="noopener" class="btn btn-secondary">
+            @romyilano on GitHub
+          </a>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number">48h</span>
+          <span class="stat-label">Hackathon Build</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">XR</span>
+          <span class="stat-label">Immersive Tech</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">AI</span>
+          <span class="stat-label">DeepMind Powered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">XR Tool Factory</p>
+      <div class="footer-links">
+        <a href="https://www.miromi.com" target="_blank" rel="noopener">miromi.com</a>
+        <a href="https://github.com/romyilano" target="_blank" rel="noopener">@romyilano</a>
+        <a href="https://github.com/romyilano/VercelHackDeepMind" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 XR Tool Factory · Hackathon Demo</p>
+    </div>
+  </footer>
+
+  <script>
+    // Video overlay — hide overlay when user clicks play
+    const overlay = document.getElementById('video-overlay');
+    const playBtn = document.getElementById('play-btn');
+    const video   = document.getElementById('demo-video');
+
+    if (playBtn && video && overlay) {
+      playBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        video.play();
+      });
+      video.addEventListener('pause', () => {
+        overlay.style.display = 'flex';
+      });
+    }
+  </script>
+</body>
+</html>

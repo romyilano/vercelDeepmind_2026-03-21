@@ -1,0 +1,18 @@
+{
+  "bruja": {
+    "realitykit": "bruja.usdz",
+    "webxr": "assets/models/bruja/blender/Meshy_AI_Surfing_Siren_0321183414_generate.glb"
+  },
+  "punkgirl": {
+    "realitykit": "punkgirl.usdz",
+    "webxr": "assets/models/punkgirl/glb/punk_girl.glb"
+  },
+  "witch": {
+    "realitykit": "witch.usdz",
+    "webxr": "witch.glb"
+  },
+  "character": {
+    "realitykit": "character.usdz",
+    "webxr": "character.glb"
+  }
+}
