@@ -1,0 +1,19 @@
+{
+  "characters": [
+    {
+      "type": "bruja",
+      "asset": "bruja",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "background": {
+    "type": "360_sphere",
+    "asset": "mystical_forest.png",
+    "description": "a dark, mystical forest with ancient trees and glowing flora",
+    "exists": false
+  }
+}

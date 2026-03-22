@@ -22,7 +22,7 @@ AGENT_FLAGS=()
 PROMPT=""
 for arg in "$@"; do
     case "$arg" in
-        --verbose|--dry-run|--clean|--backgroundcreate)
+        --verbose|--dry-run|--clean|--append|--backgroundcreate)
             AGENT_FLAGS+=("$arg")
             ;;
         --max-loops=*)

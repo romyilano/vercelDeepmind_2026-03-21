@@ -230,7 +230,7 @@ def _validate_position(pos):
 
 
 def act(gemini_result: dict, state: dict, clean: bool = False,
-        dry_run: bool = False, verbose: bool = False) -> dict:
+        append: bool = False, dry_run: bool = False, verbose: bool = False) -> dict:
     """Resolve assets, validate, write scene.json. Returns report dict."""
     t0 = time.time()
     available = state["available_assets"]
@@ -264,8 +264,8 @@ def act(gemini_result: dict, state: dict, clean: bool = False,
             entry["_original_asset"] = original_asset
         characters.append(entry)
 
-    # Merge with existing scene unless --clean
-    if not clean and state.get("existing_scene"):
+    # Only merge with existing scene if --append is explicitly set
+    if append and not clean and state.get("existing_scene"):
         existing_chars = state["existing_scene"].get("characters", [])
         characters = existing_chars + characters
 
@@ -365,7 +365,7 @@ def evaluate(report: dict, backgroundcreate: bool = False,
 # ---------------------------------------------------------------------------
 
 def run_agent(prompt: str, max_loops: int = 5, dry_run: bool = False,
-              verbose: bool = False, clean: bool = False,
+              verbose: bool = False, clean: bool = False, append: bool = False,
               backgroundcreate: bool = False) -> dict:
     """Main agent loop: observe → reason → act → evaluate, with retry."""
     total_t0 = time.time()
@@ -378,7 +378,7 @@ def run_agent(prompt: str, max_loops: int = 5, dry_run: bool = False,
         gemini_result = reason(prompt, state,
                                backgroundcreate=backgroundcreate,
                                verbose=verbose)
-        report = act(gemini_result, state, clean=clean,
+        report = act(gemini_result, state, clean=clean, append=append,
                      dry_run=dry_run, verbose=verbose)
         success, issues = evaluate(report,
                                    backgroundcreate=backgroundcreate,
@@ -417,6 +417,8 @@ def main():
                         help="Show full agent trace")
     parser.add_argument("--clean", action="store_true",
                         help="Ignore existing scene.json, start fresh")
+    parser.add_argument("--append", action="store_true",
+                        help="Merge new characters into existing scene.json")
     parser.add_argument("--backgroundcreate", action="store_true",
                         help="Include 360 background sphere in scene")
 
@@ -428,6 +430,7 @@ def main():
         dry_run=args.dry_run,
         verbose=args.verbose,
         clean=args.clean,
+        append=args.append,
         backgroundcreate=args.backgroundcreate,
     )
 

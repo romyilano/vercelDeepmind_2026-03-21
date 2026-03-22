@@ -45,6 +45,7 @@ if [ $# -eq 0 ]; then
     echo "  --verbose          Show detailed agent thinking process"
     echo "  --backgroundcreate Include a 360 environment background"
     echo "  --clean            Start fresh (ignore existing scene.json)"
+    echo "  --append           Add to existing scene instead of replacing"
     echo "=========================================================="
     exit 1
 fi

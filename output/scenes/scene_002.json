@@ -1,0 +1,22 @@
+{
+  "characters": [
+    {
+      "type": "bruja",
+      "asset": "bruja",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "type": "bruja",
+      "asset": "bruja",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

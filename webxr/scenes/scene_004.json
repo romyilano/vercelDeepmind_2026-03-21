@@ -7,8 +7,7 @@
         0.0,
         0.5,
         -3.0
-      ],
-      "resolved_asset": "assets/models/bruja/blender/Meshy_AI_Surfing_Siren_0321183414_generate.glb"
+      ]
     },
     {
       "type": "punkgirl",
@@ -17,8 +16,7 @@
         3.0,
         0.5,
         -3.0
-      ],
-      "resolved_asset": "assets/models/punkgirl/glb/punk_girl.glb"
+      ]
     },
     {
       "type": "world",
@@ -27,8 +25,7 @@
         6.0,
         0.5,
         -3.0
-      ],
-      "resolved_asset": "world.glb"
+      ]
     }
   ]
 }
